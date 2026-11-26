@@ -1,0 +1,16 @@
+name = "amani-quiz"
+main = "worker.js"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "amani-quiz"
+database_id = "8222010a-515f-42d5-9567-1ab9303bbb0c"
+
+# الترجمة للعربي بـ Workers AI
+[ai]
+binding = "AI"
+
+# جلب أسئلة جديدة كل 3 ساعات
+[triggers]
+crons = ["0 */3 * * *"]
